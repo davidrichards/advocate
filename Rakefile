@@ -3,12 +3,15 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
-    s.name = "advocate"
-    s.summary = %Q{TODO}
+    s.name = "recommender"
+    s.summary = %Q{A generic recomendation tool using correlation matrices to generate k nearest neighbors.}
     s.email = "davidlamontrichards@gmail.com"
-    s.homepage = "http://github.com/davidrichards/advocate"
-    s.description = "TODO"
+    s.homepage = "http://github.com/davidrichards/recommender"
+    s.description = "A generic recomendation tool using correlation matrices to generate k nearest neighbors."
     s.authors = ["David Richards"]
+    s.add_dependency('facets')
+    s.add_dependency('davidrichards-just_enumerable_stats')
+    s.add_dependency('davidrichards-data_frame')
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
@@ -17,7 +20,7 @@ end
 require 'rake/rdoctask'
 Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = 'advocate'
+  rdoc.title = 'recommender'
   rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
