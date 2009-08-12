@@ -3,10 +3,10 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
-    s.name = "recommender"
+    s.name = "advocate"
     s.summary = %Q{A generic recomendation tool using correlation matrices to generate k nearest neighbors.}
     s.email = "davidlamontrichards@gmail.com"
-    s.homepage = "http://github.com/davidrichards/recommender"
+    s.homepage = "http://github.com/davidrichards/advocate"
     s.description = "A generic recomendation tool using correlation matrices to generate k nearest neighbors."
     s.authors = ["David Richards"]
     s.add_dependency('facets')
@@ -20,7 +20,7 @@ end
 require 'rake/rdoctask'
 Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = 'recommender'
+  rdoc.title = 'advocate'
   rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')

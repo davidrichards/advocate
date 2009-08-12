@@ -1,4 +1,4 @@
-module Recommender #:nodoc:
+module Advocate #:nodoc:
   
   # A list of named items that is implemented with a Dictionary.  I just
   # make sure that the dictionary only contains arrays in it, so that the

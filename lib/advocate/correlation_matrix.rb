@@ -1,4 +1,4 @@
-module Recommender #:nodoc:
+module Advocate #:nodoc:
   # Creates a very large matrix of all items using Pearson's Correlation
   class CorrelationMatrix
     

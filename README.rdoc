@@ -1,4 +1,4 @@
-==Recommender
+==Advocate
 
 This is a generic recommender system using a nearest-neighbor algorithm to return k recommendations.  It is meant to be the grease on the wheels for a more involved recommender system.  This needs a model blending feature, so that various models can more easily be blended for a final recommendation.
 
@@ -12,7 +12,7 @@ I should probably write this up better after I get the blended model feature fin
 
 ==Installation
 
-  sudo gem install davidrichards-recommender
+  sudo gem install davidrichards-advocate
 
 === Dependencies
 

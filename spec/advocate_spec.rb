@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/spec_helper'
 
-describe "Recommender" do
+describe "Advocate" do
   
   it "should use JustEnumerableStats" do
     [1,2,3].should be_respond_to(:pearson_correlation)
