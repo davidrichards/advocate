@@ -42,6 +42,10 @@ module Advocate #:nodoc:
       end
     end
     
+    def inspect
+      "CorrelationMatrix: #{self.labels.inspect}"
+    end
+    
     def method_missing(sym, *args, &block)
       if self.variables.include?(sym)
         open_struct_for(sym)
